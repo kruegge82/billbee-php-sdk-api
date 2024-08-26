@@ -1,0 +1,70 @@
+# OpenAPI\Client\ShopAccountsApi
+
+All URIs are relative to https://app.billbee.io, except if the operation defines another base path.
+
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**shopAccountQueryShopAccounts()**](ShopAccountsApi.md#shopAccountQueryShopAccounts) | **GET** /api/v1/shopaccounts | Queries a list of avaible shop accounts |
+
+
+## `shopAccountQueryShopAccounts()`
+
+```php
+shopAccountQueryShopAccounts($page, $page_size): \OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiApiPagedResultOfSystemCollectionsGenericListOfBillbeeInterfacesBillbeeAPIShopAccountReadApiModel
+```
+
+Queries a list of avaible shop accounts
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+// Configure API key authorization: X-Billbee-Api-Key
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
+
+
+$apiInstance = new OpenAPI\Client\Api\ShopAccountsApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$page = 1; // int | The current page to request starting with 1
+$page_size = 50; // int | The pagesize for the result list. Values between 1 and 250 are allowed
+
+try {
+    $result = $apiInstance->shopAccountQueryShopAccounts($page, $page_size);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling ShopAccountsApi->shopAccountQueryShopAccounts: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **page** | **int**| The current page to request starting with 1 | [optional] [default to 1] |
+| **page_size** | **int**| The pagesize for the result list. Values between 1 and 250 are allowed | [optional] [default to 50] |
+
+### Return type
+
+[**\OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiApiPagedResultOfSystemCollectionsGenericListOfBillbeeInterfacesBillbeeAPIShopAccountReadApiModel**](../Model/RechnungsdruckWebAppControllersApiApiPagedResultOfSystemCollectionsGenericListOfBillbeeInterfacesBillbeeAPIShopAccountReadApiModel.md)
+
+### Authorization
+
+[X-Billbee-Api-Key](../../README.md#X-Billbee-Api-Key)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/json`, `text/json`, `application/xml`, `text/xml`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
