@@ -34,7 +34,7 @@ $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKey(
 $apiInstance = new kruegge82\billbee\Api\CustomerAddressesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
+    new GuzzleHttp\Client(['auth' => ['username', 'password']]),
     $config
 );
 $model = new \kruegge82\billbee\Model\BillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel(); // \kruegge82\billbee\Model\BillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel
@@ -94,7 +94,7 @@ $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKey(
 $apiInstance = new kruegge82\billbee\Api\CustomerAddressesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
+    new GuzzleHttp\Client(['auth' => ['username', 'password']]),
     $config
 );
 $page = 1; // int | The current page to request starting with 1 (default is 1)
@@ -156,7 +156,7 @@ $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKey(
 $apiInstance = new kruegge82\billbee\Api\CustomerAddressesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
+    new GuzzleHttp\Client(['auth' => ['username', 'password']]),
     $config
 );
 $id = 56; // int | The id of the address to query
@@ -216,7 +216,7 @@ $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKey(
 $apiInstance = new kruegge82\billbee\Api\CustomerAddressesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
+    new GuzzleHttp\Client(['auth' => ['username', 'password']]),
     $config
 );
 $id = 56; // int | The id of the address
