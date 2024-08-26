@@ -1,4 +1,4 @@
-# OpenAPI\Client\ProvisioningApi
+# kruegge82\billbee\ProvisioningApi
 
 All URIs are relative to https://app.billbee.io, except if the operation defines another base path.
 
@@ -24,12 +24,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\ProvisioningApi(
+$apiInstance = new kruegge82\billbee\Api\ProvisioningApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$model = new \OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiAutomaticProvisioningControllerCreateAccountContainer(); // \OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiAutomaticProvisioningControllerCreateAccountContainer
+$model = new \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiAutomaticProvisioningControllerCreateAccountContainer(); // \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiAutomaticProvisioningControllerCreateAccountContainer
 
 try {
     $result = $apiInstance->automaticProvisioningCreateAccount($model);
@@ -43,7 +43,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **model** | [**\OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiAutomaticProvisioningControllerCreateAccountContainer**](../Model/RechnungsdruckWebAppControllersApiAutomaticProvisioningControllerCreateAccountContainer.md)|  | |
+| **model** | [**\kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiAutomaticProvisioningControllerCreateAccountContainer**](../Model/RechnungsdruckWebAppControllersApiAutomaticProvisioningControllerCreateAccountContainer.md)|  | |
 
 ### Return type
 
@@ -78,7 +78,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\ProvisioningApi(
+$apiInstance = new kruegge82\billbee\Api\ProvisioningApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()

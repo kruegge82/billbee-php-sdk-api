@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **show_input** | **bool** |  | [optional] [readonly]
 **service_name** | **string** |  | [optional] [readonly]
 **type_name** | **string** |  | [optional] [readonly]
-**possible_value_lists** | [**\OpenAPI\Client\Model\SystemCollectionsGenericKeyValuePairOfSystemStringAndSystemCollectionsGenericListOfSystemCollectionsGenericKeyValuePairOfSystemInt32AndSystemString[]**](SystemCollectionsGenericKeyValuePairOfSystemStringAndSystemCollectionsGenericListOfSystemCollectionsGenericKeyValuePairOfSystemInt32AndSystemString.md) |  | [optional] [readonly]
+**possible_value_lists** | [**\kruegge82\billbee\Model\SystemCollectionsGenericKeyValuePairOfSystemStringAndSystemCollectionsGenericListOfSystemCollectionsGenericKeyValuePairOfSystemInt32AndSystemString[]**](SystemCollectionsGenericKeyValuePairOfSystemStringAndSystemCollectionsGenericListOfSystemCollectionsGenericKeyValuePairOfSystemInt32AndSystemString.md) |  | [optional] [readonly]
 **can_be_configured** | **bool** |  | [optional] [readonly]
 **has_dynamic_values** | **bool** |  | [optional] [readonly]
 **is_required** | **bool** |  | [optional] [readonly]

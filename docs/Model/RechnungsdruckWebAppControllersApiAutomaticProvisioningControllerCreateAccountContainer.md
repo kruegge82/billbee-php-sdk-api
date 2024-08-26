@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **e_mail** | **string** | The Email address of the user to create |
 **password** | **string** |  | [optional]
 **accept_terms** | **bool** | Set to true, if the user has accepted the Billbee terms &amp;amp; conditions | [optional]
-**address** | [**\OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiAutomaticProvisioningControllerCreateAccountContainerUserAddress**](RechnungsdruckWebAppControllersApiAutomaticProvisioningControllerCreateAccountContainerUserAddress.md) |  | [optional]
+**address** | [**\kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiAutomaticProvisioningControllerCreateAccountContainerUserAddress**](RechnungsdruckWebAppControllersApiAutomaticProvisioningControllerCreateAccountContainerUserAddress.md) |  | [optional]
 **affiliate_coupon_code** | **string** | Specifies an billbee affiliate code to attach to the user | [optional]
 **vat1_rate** | **float** | Optionally specify the vat1 (normal) rate of the user | [optional]
 **vat2_rate** | **float** | Optionally specify the vat2 (reduced) rate of the user | [optional]

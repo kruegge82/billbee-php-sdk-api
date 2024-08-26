@@ -1,4 +1,4 @@
-# OpenAPI\Client\ShipmentsApi
+# kruegge82\billbee\ShipmentsApi
 
 All URIs are relative to https://app.billbee.io, except if the operation defines another base path.
 
@@ -15,7 +15,7 @@ All URIs are relative to https://app.billbee.io, except if the operation defines
 ## `shipmentGetList()`
 
 ```php
-shipmentGetList($page, $page_size, $created_at_min, $created_at_max, $order_id, $minimum_shipment_id, $shipping_provider_id): \OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiApiPagedResultOfSystemCollectionsGenericListOfBillbeeInterfacesBillbeeAPIModelShipment
+shipmentGetList($page, $page_size, $created_at_min, $created_at_max, $order_id, $minimum_shipment_id, $shipping_provider_id): \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiApiPagedResultOfSystemCollectionsGenericListOfBillbeeInterfacesBillbeeAPIModelShipment
 ```
 
 Get a list of all shipments optionally filtered by date. All parameters are optional.
@@ -28,12 +28,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: X-Billbee-Api-Key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
+$config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
+// $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\ShipmentsApi(
+$apiInstance = new kruegge82\billbee\Api\ShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -69,7 +69,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiApiPagedResultOfSystemCollectionsGenericListOfBillbeeInterfacesBillbeeAPIModelShipment**](../Model/RechnungsdruckWebAppControllersApiApiPagedResultOfSystemCollectionsGenericListOfBillbeeInterfacesBillbeeAPIModelShipment.md)
+[**\kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiApiPagedResultOfSystemCollectionsGenericListOfBillbeeInterfacesBillbeeAPIModelShipment**](../Model/RechnungsdruckWebAppControllersApiApiPagedResultOfSystemCollectionsGenericListOfBillbeeInterfacesBillbeeAPIModelShipment.md)
 
 ### Authorization
 
@@ -100,12 +100,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: X-Billbee-Api-Key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
+$config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
+// $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\ShipmentsApi(
+$apiInstance = new kruegge82\billbee\Api\ShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -157,12 +157,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: X-Billbee-Api-Key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
+$config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
+// $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\ShipmentsApi(
+$apiInstance = new kruegge82\billbee\Api\ShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -214,12 +214,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: X-Billbee-Api-Key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
+$config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
+// $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\ShipmentsApi(
+$apiInstance = new kruegge82\billbee\Api\ShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -271,18 +271,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: X-Billbee-Api-Key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
+$config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
+// $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\ShipmentsApi(
+$apiInstance = new kruegge82\billbee\Api\ShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$model = new \OpenAPI\Client\Model\BillbeeInterfacesBillbeeAPIModelCreateShipmentApiModel(); // \OpenAPI\Client\Model\BillbeeInterfacesBillbeeAPIModelCreateShipmentApiModel | Data to specify shipment parameters
+$model = new \kruegge82\billbee\Model\BillbeeInterfacesBillbeeAPIModelCreateShipmentApiModel(); // \kruegge82\billbee\Model\BillbeeInterfacesBillbeeAPIModelCreateShipmentApiModel | Data to specify shipment parameters
 
 try {
     $result = $apiInstance->shipmentPostShipment($model);
@@ -296,7 +296,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **model** | [**\OpenAPI\Client\Model\BillbeeInterfacesBillbeeAPIModelCreateShipmentApiModel**](../Model/BillbeeInterfacesBillbeeAPIModelCreateShipmentApiModel.md)| Data to specify shipment parameters | |
+| **model** | [**\kruegge82\billbee\Model\BillbeeInterfacesBillbeeAPIModelCreateShipmentApiModel**](../Model/BillbeeInterfacesBillbeeAPIModelCreateShipmentApiModel.md)| Data to specify shipment parameters | |
 
 ### Return type
 
@@ -318,7 +318,7 @@ try {
 ## `shipmentShipWithLabel()`
 
 ```php
-shipmentShipWithLabel($shipment_information): \OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiApiResultOfRechnungsdruckWebAppControllersApiShipmentWithLabelResult
+shipmentShipWithLabel($shipment_information): \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiApiResultOfRechnungsdruckWebAppControllersApiShipmentWithLabelResult
 ```
 
 Creates a shipment for an order in billbee
@@ -331,18 +331,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: X-Billbee-Api-Key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
+$config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
+// $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\ShipmentsApi(
+$apiInstance = new kruegge82\billbee\Api\ShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$shipment_information = new \OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiShipmentWithLabel(); // \OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiShipmentWithLabel | Details on the order and the shipping methods, that should be used.
+$shipment_information = new \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiShipmentWithLabel(); // \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiShipmentWithLabel | Details on the order and the shipping methods, that should be used.
 
 try {
     $result = $apiInstance->shipmentShipWithLabel($shipment_information);
@@ -356,11 +356,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **shipment_information** | [**\OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiShipmentWithLabel**](../Model/RechnungsdruckWebAppControllersApiShipmentWithLabel.md)| Details on the order and the shipping methods, that should be used. | |
+| **shipment_information** | [**\kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiShipmentWithLabel**](../Model/RechnungsdruckWebAppControllersApiShipmentWithLabel.md)| Details on the order and the shipping methods, that should be used. | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiApiResultOfRechnungsdruckWebAppControllersApiShipmentWithLabelResult**](../Model/RechnungsdruckWebAppControllersApiApiResultOfRechnungsdruckWebAppControllersApiShipmentWithLabelResult.md)
+[**\kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiApiResultOfRechnungsdruckWebAppControllersApiShipmentWithLabelResult**](../Model/RechnungsdruckWebAppControllersApiApiResultOfRechnungsdruckWebAppControllersApiShipmentWithLabelResult.md)
 
 ### Authorization
 

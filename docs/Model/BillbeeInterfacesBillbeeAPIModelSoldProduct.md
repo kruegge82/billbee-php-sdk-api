@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **sku** | **string** | The SKU of this product | [optional]
 **sku_or_id** | **string** | The SKU of this product or the id if the SKU is empty | [optional] [readonly]
 **is_digital** | **bool** | True if the product is a digital good (download etc.), false if not | [optional]
-**images** | [**\OpenAPI\Client\Model\BillbeeInterfacesBillbeeAPIModelProductImage[]**](BillbeeInterfacesBillbeeAPIModelProductImage.md) | The images of this product | [optional]
+**images** | [**\kruegge82\billbee\Model\BillbeeInterfacesBillbeeAPIModelProductImage[]**](BillbeeInterfacesBillbeeAPIModelProductImage.md) | The images of this product | [optional]
 **ean** | **string** | The EAN / GTIN of this product | [optional]
 **platform_data** | **string** | Optional platform specific Data as serialized JSON Object for the product | [optional]
 **taric_code** | **string** | The TARIC code | [optional]

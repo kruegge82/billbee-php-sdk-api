@@ -1,4 +1,4 @@
-# OpenAPI\Client\WebhooksApi
+# kruegge82\billbee\WebhooksApi
 
 All URIs are relative to https://app.billbee.io, except if the operation defines another base path.
 
@@ -29,12 +29,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: X-Billbee-Api-Key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
+$config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
+// $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\WebhooksApi(
+$apiInstance = new kruegge82\billbee\Api\WebhooksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -89,12 +89,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: X-Billbee-Api-Key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
+$config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
+// $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\WebhooksApi(
+$apiInstance = new kruegge82\billbee\Api\WebhooksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -133,7 +133,7 @@ This endpoint does not need any parameter.
 ## `webHookManagementGet()`
 
 ```php
-webHookManagementGet(): \OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiWebHookApiModel[]
+webHookManagementGet(): \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiWebHookApiModel[]
 ```
 
 Gets all registered WebHooks for a given user.
@@ -146,12 +146,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: X-Billbee-Api-Key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
+$config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
+// $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\WebhooksApi(
+$apiInstance = new kruegge82\billbee\Api\WebhooksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -172,7 +172,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiWebHookApiModel[]**](../Model/RechnungsdruckWebAppControllersApiWebHookApiModel.md)
+[**\kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiWebHookApiModel[]**](../Model/RechnungsdruckWebAppControllersApiWebHookApiModel.md)
 
 ### Authorization
 
@@ -203,12 +203,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: X-Billbee-Api-Key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
+$config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
+// $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\WebhooksApi(
+$apiInstance = new kruegge82\billbee\Api\WebhooksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -247,7 +247,7 @@ This endpoint does not need any parameter.
 ## `webHookManagementLookup()`
 
 ```php
-webHookManagementLookup($id): \OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiWebHookApiModel
+webHookManagementLookup($id): \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiWebHookApiModel
 ```
 
 Looks up a registered WebHook with the given {id} for a given user.
@@ -260,12 +260,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: X-Billbee-Api-Key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
+$config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
+// $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\WebhooksApi(
+$apiInstance = new kruegge82\billbee\Api\WebhooksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -289,7 +289,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiWebHookApiModel**](../Model/RechnungsdruckWebAppControllersApiWebHookApiModel.md)
+[**\kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiWebHookApiModel**](../Model/RechnungsdruckWebAppControllersApiWebHookApiModel.md)
 
 ### Authorization
 
@@ -307,7 +307,7 @@ try {
 ## `webHookManagementPost()`
 
 ```php
-webHookManagementPost($web_hook): \OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiWebHookApiModel
+webHookManagementPost($web_hook): \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiWebHookApiModel
 ```
 
 Registers a new WebHook for a given user.
@@ -320,18 +320,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: X-Billbee-Api-Key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
+$config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
+// $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\WebhooksApi(
+$apiInstance = new kruegge82\billbee\Api\WebhooksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$web_hook = new \OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiWebHookApiModel(); // \OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiWebHookApiModel | The webhook to create. Attach ?noecho to the uri to prevent echo test.
+$web_hook = new \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiWebHookApiModel(); // \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiWebHookApiModel | The webhook to create. Attach ?noecho to the uri to prevent echo test.
 
 try {
     $result = $apiInstance->webHookManagementPost($web_hook);
@@ -345,11 +345,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **web_hook** | [**\OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiWebHookApiModel**](../Model/RechnungsdruckWebAppControllersApiWebHookApiModel.md)| The webhook to create. Attach ?noecho to the uri to prevent echo test. | |
+| **web_hook** | [**\kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiWebHookApiModel**](../Model/RechnungsdruckWebAppControllersApiWebHookApiModel.md)| The webhook to create. Attach ?noecho to the uri to prevent echo test. | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiWebHookApiModel**](../Model/RechnungsdruckWebAppControllersApiWebHookApiModel.md)
+[**\kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiWebHookApiModel**](../Model/RechnungsdruckWebAppControllersApiWebHookApiModel.md)
 
 ### Authorization
 
@@ -367,7 +367,7 @@ try {
 ## `webHookManagementPut()`
 
 ```php
-webHookManagementPut($id, $web_hook): \OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiWebHookApiModel
+webHookManagementPut($id, $web_hook): \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiWebHookApiModel
 ```
 
 Updates an existing WebHook registration.
@@ -380,19 +380,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: X-Billbee-Api-Key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
+$config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
+// $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\WebhooksApi(
+$apiInstance = new kruegge82\billbee\Api\WebhooksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = 'id_example'; // string | The WebHook ID.
-$web_hook = new \OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiWebHookApiModel(); // \OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiWebHookApiModel | The new webhook to use.
+$web_hook = new \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiWebHookApiModel(); // \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiWebHookApiModel | The new webhook to use.
 
 try {
     $result = $apiInstance->webHookManagementPut($id, $web_hook);
@@ -407,11 +407,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **id** | **string**| The WebHook ID. | |
-| **web_hook** | [**\OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiWebHookApiModel**](../Model/RechnungsdruckWebAppControllersApiWebHookApiModel.md)| The new webhook to use. | |
+| **web_hook** | [**\kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiWebHookApiModel**](../Model/RechnungsdruckWebAppControllersApiWebHookApiModel.md)| The new webhook to use. | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiWebHookApiModel**](../Model/RechnungsdruckWebAppControllersApiWebHookApiModel.md)
+[**\kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiWebHookApiModel**](../Model/RechnungsdruckWebAppControllersApiWebHookApiModel.md)
 
 ### Authorization
 

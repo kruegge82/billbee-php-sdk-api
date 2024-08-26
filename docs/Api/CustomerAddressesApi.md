@@ -1,4 +1,4 @@
-# OpenAPI\Client\CustomerAddressesApi
+# kruegge82\billbee\CustomerAddressesApi
 
 All URIs are relative to https://app.billbee.io, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to https://app.billbee.io, except if the operation defines
 ## `customerAddressesCreate()`
 
 ```php
-customerAddressesCreate($model): \OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiApiResultOfBillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel
+customerAddressesCreate($model): \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiApiResultOfBillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel
 ```
 
 Creates a new customer address
@@ -26,18 +26,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: X-Billbee-Api-Key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
+$config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
+// $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\CustomerAddressesApi(
+$apiInstance = new kruegge82\billbee\Api\CustomerAddressesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$model = new \OpenAPI\Client\Model\BillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel(); // \OpenAPI\Client\Model\BillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel
+$model = new \kruegge82\billbee\Model\BillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel(); // \kruegge82\billbee\Model\BillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel
 
 try {
     $result = $apiInstance->customerAddressesCreate($model);
@@ -51,11 +51,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **model** | [**\OpenAPI\Client\Model\BillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel**](../Model/BillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel.md)|  | |
+| **model** | [**\kruegge82\billbee\Model\BillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel**](../Model/BillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiApiResultOfBillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel**](../Model/RechnungsdruckWebAppControllersApiApiResultOfBillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel.md)
+[**\kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiApiResultOfBillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel**](../Model/RechnungsdruckWebAppControllersApiApiResultOfBillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel.md)
 
 ### Authorization
 
@@ -73,7 +73,7 @@ try {
 ## `customerAddressesGetAll()`
 
 ```php
-customerAddressesGetAll($page, $page_size): \OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiApiPagedResultOfSystemCollectionsGenericListOfBillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel
+customerAddressesGetAll($page, $page_size): \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiApiPagedResultOfSystemCollectionsGenericListOfBillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel
 ```
 
 Get a list of all customer addresses
@@ -86,12 +86,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: X-Billbee-Api-Key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
+$config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
+// $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\CustomerAddressesApi(
+$apiInstance = new kruegge82\billbee\Api\CustomerAddressesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -117,7 +117,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiApiPagedResultOfSystemCollectionsGenericListOfBillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel**](../Model/RechnungsdruckWebAppControllersApiApiPagedResultOfSystemCollectionsGenericListOfBillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel.md)
+[**\kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiApiPagedResultOfSystemCollectionsGenericListOfBillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel**](../Model/RechnungsdruckWebAppControllersApiApiPagedResultOfSystemCollectionsGenericListOfBillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel.md)
 
 ### Authorization
 
@@ -135,7 +135,7 @@ try {
 ## `customerAddressesGetOne()`
 
 ```php
-customerAddressesGetOne($id): \OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiApiResultOfBillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel
+customerAddressesGetOne($id): \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiApiResultOfBillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel
 ```
 
 Queries a single customer address by id
@@ -148,12 +148,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: X-Billbee-Api-Key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
+$config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
+// $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\CustomerAddressesApi(
+$apiInstance = new kruegge82\billbee\Api\CustomerAddressesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -177,7 +177,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiApiResultOfBillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel**](../Model/RechnungsdruckWebAppControllersApiApiResultOfBillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel.md)
+[**\kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiApiResultOfBillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel**](../Model/RechnungsdruckWebAppControllersApiApiResultOfBillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel.md)
 
 ### Authorization
 
@@ -195,7 +195,7 @@ try {
 ## `customerAddressesUpdate()`
 
 ```php
-customerAddressesUpdate($id, $model): \OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiApiResultOfBillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel
+customerAddressesUpdate($id, $model): \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiApiResultOfBillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel
 ```
 
 Updates a customer address by id
@@ -208,19 +208,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: X-Billbee-Api-Key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
+$config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
+// $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\CustomerAddressesApi(
+$apiInstance = new kruegge82\billbee\Api\CustomerAddressesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = 56; // int | The id of the address
-$model = new \OpenAPI\Client\Model\BillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel(); // \OpenAPI\Client\Model\BillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel
+$model = new \kruegge82\billbee\Model\BillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel(); // \kruegge82\billbee\Model\BillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel
 
 try {
     $result = $apiInstance->customerAddressesUpdate($id, $model);
@@ -235,11 +235,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **id** | **int**| The id of the address | |
-| **model** | [**\OpenAPI\Client\Model\BillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel**](../Model/BillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel.md)|  | |
+| **model** | [**\kruegge82\billbee\Model\BillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel**](../Model/BillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\RechnungsdruckWebAppControllersApiApiResultOfBillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel**](../Model/RechnungsdruckWebAppControllersApiApiResultOfBillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel.md)
+[**\kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiApiResultOfBillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel**](../Model/RechnungsdruckWebAppControllersApiApiResultOfBillbeeInterfacesBillbeeAPIModelCustomerAddressApiModel.md)
 
 ### Authorization
 

@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** |  | [optional]
 **definition_id** | **int** |  | [optional]
-**definition** | [**\OpenAPI\Client\Model\BillbeeInterfacesBillbeeAPIModelArticleApiCustomFieldDefinitionModel**](BillbeeInterfacesBillbeeAPIModelArticleApiCustomFieldDefinitionModel.md) |  | [optional]
+**definition** | [**\kruegge82\billbee\Model\BillbeeInterfacesBillbeeAPIModelArticleApiCustomFieldDefinitionModel**](BillbeeInterfacesBillbeeAPIModelArticleApiCustomFieldDefinitionModel.md) |  | [optional]
 **article_id** | **int** |  | [optional]
 **value** | **object** |  | [optional]
 

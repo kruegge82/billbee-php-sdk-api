@@ -12,6 +12,6 @@ Name | Type | Description | Notes
 **weight_in_gram** | **int** | Optional the shipments weight in gram to override the calculated weight | [optional]
 **ship_date** | **\DateTime** | Optional specify the shipdate to be transmitted to the carrier | [optional]
 **client_reference** | **string** | Optional specify a reference text to be included on the label. Works not with all carriers | [optional]
-**dimension** | [**\OpenAPI\Client\Model\BillbeeInterfacesShippingShipmentDataDimensions**](BillbeeInterfacesShippingShipmentDataDimensions.md) |  | [optional]
+**dimension** | [**\kruegge82\billbee\Model\BillbeeInterfacesShippingShipmentDataDimensions**](BillbeeInterfacesShippingShipmentDataDimensions.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)
