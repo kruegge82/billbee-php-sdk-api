@@ -414,6 +414,15 @@ class ProvisioningApi
             }
         }
 
+        // this endpoint requires HTTP basic authentication
+        if (!empty($this->config->getUsername()) || !(empty($this->config->getPassword()))) {
+            $headers['Authorization'] = 'Basic ' . base64_encode($this->config->getUsername() . ":" . $this->config->getPassword());
+        }
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('X-Billbee-Api-Key');
+        if ($apiKey !== null) {
+            $headers['X-Billbee-Api-Key'] = $apiKey;
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -701,6 +710,15 @@ class ProvisioningApi
             }
         }
 
+        // this endpoint requires HTTP basic authentication
+        if (!empty($this->config->getUsername()) || !(empty($this->config->getPassword()))) {
+            $headers['Authorization'] = 'Basic ' . base64_encode($this->config->getUsername() . ":" . $this->config->getPassword());
+        }
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('X-Billbee-Api-Key');
+        if ($apiKey !== null) {
+            $headers['X-Billbee-Api-Key'] = $apiKey;
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {

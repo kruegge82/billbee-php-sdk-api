@@ -27,7 +27,12 @@ Get a list of all shipments optionally filtered by date. All parameters are opti
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure API key authorization: X-Billbee-Api-Key
+// Configure HTTP basic authorization: basicAuth
+$config = kruegge82\billbee\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+// Configure API key authorization: ApiKeyAuth
 $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
@@ -36,7 +41,7 @@ $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKey(
 $apiInstance = new kruegge82\billbee\Api\ShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(['auth' => ['username', 'password']]),
+    new GuzzleHttp\Client(),
     $config
 );
 $page = 1; // int | Specifies the page to request.
@@ -73,7 +78,7 @@ try {
 
 ### Authorization
 
-[X-Billbee-Api-Key](../../README.md#X-Billbee-Api-Key)
+[basicAuth](../../README.md#basicAuth), [ApiKeyAuth](../../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -99,7 +104,12 @@ shipmentGetPing(): object
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure API key authorization: X-Billbee-Api-Key
+// Configure HTTP basic authorization: basicAuth
+$config = kruegge82\billbee\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+// Configure API key authorization: ApiKeyAuth
 $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
@@ -108,7 +118,7 @@ $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKey(
 $apiInstance = new kruegge82\billbee\Api\ShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(['auth' => ['username', 'password']]),
+    new GuzzleHttp\Client(),
     $config
 );
 
@@ -130,7 +140,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[X-Billbee-Api-Key](../../README.md#X-Billbee-Api-Key)
+[basicAuth](../../README.md#basicAuth), [ApiKeyAuth](../../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -156,7 +166,12 @@ Queries the currently available shipping carriers.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure API key authorization: X-Billbee-Api-Key
+// Configure HTTP basic authorization: basicAuth
+$config = kruegge82\billbee\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+// Configure API key authorization: ApiKeyAuth
 $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
@@ -165,7 +180,7 @@ $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKey(
 $apiInstance = new kruegge82\billbee\Api\ShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(['auth' => ['username', 'password']]),
+    new GuzzleHttp\Client(),
     $config
 );
 
@@ -187,7 +202,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[X-Billbee-Api-Key](../../README.md#X-Billbee-Api-Key)
+[basicAuth](../../README.md#basicAuth), [ApiKeyAuth](../../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -213,7 +228,12 @@ Query all defined shipping providers
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure API key authorization: X-Billbee-Api-Key
+// Configure HTTP basic authorization: basicAuth
+$config = kruegge82\billbee\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+// Configure API key authorization: ApiKeyAuth
 $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
@@ -222,7 +242,7 @@ $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKey(
 $apiInstance = new kruegge82\billbee\Api\ShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(['auth' => ['username', 'password']]),
+    new GuzzleHttp\Client(),
     $config
 );
 
@@ -244,7 +264,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[X-Billbee-Api-Key](../../README.md#X-Billbee-Api-Key)
+[basicAuth](../../README.md#basicAuth), [ApiKeyAuth](../../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -270,7 +290,12 @@ Creates a new shipment with the selected Shippingprovider
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure API key authorization: X-Billbee-Api-Key
+// Configure HTTP basic authorization: basicAuth
+$config = kruegge82\billbee\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+// Configure API key authorization: ApiKeyAuth
 $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
@@ -279,7 +304,7 @@ $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKey(
 $apiInstance = new kruegge82\billbee\Api\ShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(['auth' => ['username', 'password']]),
+    new GuzzleHttp\Client(),
     $config
 );
 $model = new \kruegge82\billbee\Model\BillbeeInterfacesBillbeeAPIModelCreateShipmentApiModel(); // \kruegge82\billbee\Model\BillbeeInterfacesBillbeeAPIModelCreateShipmentApiModel | Data to specify shipment parameters
@@ -304,7 +329,7 @@ try {
 
 ### Authorization
 
-[X-Billbee-Api-Key](../../README.md#X-Billbee-Api-Key)
+[basicAuth](../../README.md#basicAuth), [ApiKeyAuth](../../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -330,7 +355,12 @@ Creates a shipment for an order in billbee
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure API key authorization: X-Billbee-Api-Key
+// Configure HTTP basic authorization: basicAuth
+$config = kruegge82\billbee\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+// Configure API key authorization: ApiKeyAuth
 $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKey('X-Billbee-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Billbee-Api-Key', 'Bearer');
@@ -339,7 +369,7 @@ $config = kruegge82\billbee\Configuration::getDefaultConfiguration()->setApiKey(
 $apiInstance = new kruegge82\billbee\Api\ShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(['auth' => ['username', 'password']]),
+    new GuzzleHttp\Client(),
     $config
 );
 $shipment_information = new \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiShipmentWithLabel(); // \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiShipmentWithLabel | Details on the order and the shipping methods, that should be used.
@@ -364,7 +394,7 @@ try {
 
 ### Authorization
 
-[X-Billbee-Api-Key](../../README.md#X-Billbee-Api-Key)
+[basicAuth](../../README.md#basicAuth), [ApiKeyAuth](../../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 

@@ -418,6 +418,10 @@ class ShopAccountsApi
             }
         }
 
+        // this endpoint requires HTTP basic authentication
+        if (!empty($this->config->getUsername()) || !(empty($this->config->getPassword()))) {
+            $headers['Authorization'] = 'Basic ' . base64_encode($this->config->getUsername() . ":" . $this->config->getPassword());
+        }
         // this endpoint requires API key authentication
         $apiKey = $this->config->getApiKeyWithPrefix('X-Billbee-Api-Key');
         if ($apiKey !== null) {
