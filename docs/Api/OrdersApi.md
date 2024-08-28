@@ -91,7 +91,7 @@ This endpoint does not need any parameter.
 ## `orderApiAddShipment()`
 
 ```php
-orderApiAddShipment($id, $model): object
+orderApiAddShipment($id, $model)
 ```
 
 Add a shipment to a given order
@@ -124,8 +124,7 @@ $id = 56; // int | The internal billbee id of the order
 $model = new \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiApiAddShipmentToOrderModel(); // \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiApiAddShipmentToOrderModel | The shipment data to create the shipment
 
 try {
-    $result = $apiInstance->orderApiAddShipment($id, $model);
-    print_r($result);
+    $apiInstance->orderApiAddShipment($id, $model);
 } catch (Exception $e) {
     echo 'Exception when calling OrdersApi->orderApiAddShipment: ', $e->getMessage(), PHP_EOL;
 }
@@ -140,7 +139,7 @@ try {
 
 ### Return type
 
-**object**
+void (empty response body)
 
 ### Authorization
 
@@ -149,7 +148,7 @@ try {
 ### HTTP request headers
 
 - **Content-Type**: `application/json`, `text/json`, `application/xml`, `text/xml`, `application/x-www-form-urlencoded`
-- **Accept**: `application/json`, `text/json`
+- **Accept**: Not defined
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -1273,7 +1272,7 @@ try {
 ## `orderApiUpdateState()`
 
 ```php
-orderApiUpdateState($id, $model): object
+orderApiUpdateState($id, $model)
 ```
 
 Changes the main state of a single order
@@ -1308,8 +1307,7 @@ $id = 56; // int | The internal id of the order
 $model = new \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiOrderStateUpdate(); // \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiOrderStateUpdate | The data used to change the state
 
 try {
-    $result = $apiInstance->orderApiUpdateState($id, $model);
-    print_r($result);
+    $apiInstance->orderApiUpdateState($id, $model);
 } catch (Exception $e) {
     echo 'Exception when calling OrdersApi->orderApiUpdateState: ', $e->getMessage(), PHP_EOL;
 }
@@ -1324,7 +1322,7 @@ try {
 
 ### Return type
 
-**object**
+void (empty response body)
 
 ### Authorization
 
@@ -1333,7 +1331,7 @@ try {
 ### HTTP request headers
 
 - **Content-Type**: `application/json`, `text/json`, `application/xml`, `text/xml`, `application/x-www-form-urlencoded`
-- **Accept**: `application/json`, `text/json`
+- **Accept**: Not defined
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
