@@ -1033,6 +1033,10 @@ paths:
       responses:
         '200':
           description: OK
+        '400':
+          description: Invalid data was received in the request
+          schema:
+            $ref: '#/definitions/Rechnungsdruck.WebApp.Controllers.Api.ApiResultOfBillbee.Interfaces.BillbeeAPI.Model.Order'
 
   /api/v1/orders/invoices:
     get:

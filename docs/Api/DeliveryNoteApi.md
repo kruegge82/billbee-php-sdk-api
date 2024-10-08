@@ -4,13 +4,13 @@ All URIs are relative to https://app.billbee.io, except if the operation defines
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
-| [**orderApiCreateDeliveryNote()**](DeliveryNoteApi.md#orderApiCreateDeliveryNote) | **POST** /api/v1/orders/CreateDeliveryNote/{id} | Create an delivery note for an existing order. This request is extra throttled by order and api key to a maximum of 1 per 5 minutes. |
+| [**orderApiCreateDeliveryNote_0()**](DeliveryNoteApi.md#orderApiCreateDeliveryNote_0) | **POST** /api/v1/orders/CreateDeliveryNote/{id} | Create an delivery note for an existing order. This request is extra throttled by order and api key to a maximum of 1 per 5 minutes. |
 
 
-## `orderApiCreateDeliveryNote()`
+## `orderApiCreateDeliveryNote_0()`
 
 ```php
-orderApiCreateDeliveryNote($id, $include_pdf, $send_to_cloud_id): object
+orderApiCreateDeliveryNote_0($id, $include_pdf, $send_to_cloud_id): object
 ```
 
 Create an delivery note for an existing order. This request is extra throttled by order and api key to a maximum of 1 per 5 minutes.
@@ -44,10 +44,10 @@ $include_pdf = false; // bool | If true, the PDF is included in the response as 
 $send_to_cloud_id = 56; // int | Optionally specify the id of a billbee connected cloud device to send the pdf to
 
 try {
-    $result = $apiInstance->orderApiCreateDeliveryNote($id, $include_pdf, $send_to_cloud_id);
+    $result = $apiInstance->orderApiCreateDeliveryNote_0($id, $include_pdf, $send_to_cloud_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling DeliveryNoteApi->orderApiCreateDeliveryNote: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling DeliveryNoteApi->orderApiCreateDeliveryNote_0: ', $e->getMessage(), PHP_EOL;
 }
 ```
 

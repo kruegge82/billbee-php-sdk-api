@@ -47,7 +47,7 @@ To install the bindings via [Composer](https://getcomposer.org/), add the follow
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/kruegge82/billbee-php-sdk-api.git"
+      "url": "https://github.com/GIT_USER_ID/GIT_REPO_ID.git"
     }
   ],
   "require": {
@@ -125,8 +125,8 @@ Class | Method | HTTP request | Description
 *CustomersApi* | [**customerPatchAddress**](docs/Api/CustomersApi.md#customerpatchaddress) | **PATCH** /api/v1/customers/addresses/{id} | Updates one or more fields of an address
 *CustomersApi* | [**customerUpdate**](docs/Api/CustomersApi.md#customerupdate) | **PUT** /api/v1/customers/{id} | Updates a customer by id
 *CustomersApi* | [**customerUpdateAddress**](docs/Api/CustomersApi.md#customerupdateaddress) | **PUT** /api/v1/customers/addresses/{id} | Updates all fields of an address
-*CustomersApi* | [**searchSearch**](docs/Api/CustomersApi.md#searchsearch) | **POST** /api/v1/search | Search for products, customers and orders.  Type can be \&quot;order\&quot;, \&quot;product\&quot; and / or \&quot;customer\&quot;  Term can contain lucene query syntax
-*DeliveryNoteApi* | [**orderApiCreateDeliveryNote**](docs/Api/DeliveryNoteApi.md#orderapicreatedeliverynote) | **POST** /api/v1/orders/CreateDeliveryNote/{id} | Create an delivery note for an existing order. This request is extra throttled by order and api key to a maximum of 1 per 5 minutes.
+*CustomersApi* | [**searchSearch_0**](docs/Api/CustomersApi.md#searchsearch_0) | **POST** /api/v1/search | Search for products, customers and orders.  Type can be \&quot;order\&quot;, \&quot;product\&quot; and / or \&quot;customer\&quot;  Term can contain lucene query syntax
+*DeliveryNoteApi* | [**orderApiCreateDeliveryNote_0**](docs/Api/DeliveryNoteApi.md#orderapicreatedeliverynote_0) | **POST** /api/v1/orders/CreateDeliveryNote/{id} | Create an delivery note for an existing order. This request is extra throttled by order and api key to a maximum of 1 per 5 minutes.
 *EnumApiApi* | [**enumApiGetAccountSyncState**](docs/Api/EnumApiApi.md#enumapigetaccountsyncstate) | **GET** /api/v1/enums/accountsyncstate | Returns a list with all defined account sync states
 *EnumApiApi* | [**enumApiGetOrderStates**](docs/Api/EnumApiApi.md#enumapigetorderstates) | **GET** /api/v1/enums/orderstates | Returns a list with all defined orderstates
 *EnumApiApi* | [**enumApiGetPaymentTypes**](docs/Api/EnumApiApi.md#enumapigetpaymenttypes) | **GET** /api/v1/enums/paymenttypes | Returns a list with all defined paymenttypes
@@ -134,8 +134,8 @@ Class | Method | HTTP request | Description
 *EnumApiApi* | [**enumApiGetShippingCarriers**](docs/Api/EnumApiApi.md#enumapigetshippingcarriers) | **GET** /api/v1/enums/shippingcarriers | Returns a list with all defined shippingcarriers
 *EnumApiApi* | [**enumApiGetShopAccountType**](docs/Api/EnumApiApi.md#enumapigetshopaccounttype) | **GET** /api/v1/enums/shopaccounttype | Returns a list with all defined account types
 *EventsApi* | [**eventApiGetList**](docs/Api/EventsApi.md#eventapigetlist) | **GET** /api/v1/events | Get a list of all events optionally filtered by date. This request is extra throttled to 2 calls per page per hour.
-*InvoiceApi* | [**orderApiCreateInvoice**](docs/Api/InvoiceApi.md#orderapicreateinvoice) | **POST** /api/v1/orders/CreateInvoice/{id} | Create an invoice for an existing order. This request is extra throttled by order and api key to a maximum of 1 per 5 minutes.
-*InvoiceApi* | [**orderApiGetInvoiceList**](docs/Api/InvoiceApi.md#orderapigetinvoicelist) | **GET** /api/v1/orders/invoices | Get a list of all invoices optionally filtered by date. This request ist throttled to 1 per 1 minute for same page and minInvoiceDate
+*InvoiceApi* | [**orderApiCreateInvoice_0**](docs/Api/InvoiceApi.md#orderapicreateinvoice_0) | **POST** /api/v1/orders/CreateInvoice/{id} | Create an invoice for an existing order. This request is extra throttled by order and api key to a maximum of 1 per 5 minutes.
+*InvoiceApi* | [**orderApiGetInvoiceList_0**](docs/Api/InvoiceApi.md#orderapigetinvoicelist_0) | **GET** /api/v1/orders/invoices | Get a list of all invoices optionally filtered by date. This request ist throttled to 1 per 1 minute for same page and minInvoiceDate
 *OrdersApi* | [**layoutApiGetList**](docs/Api/OrdersApi.md#layoutapigetlist) | **GET** /api/v1/layouts | 
 *OrdersApi* | [**orderApiAddShipment**](docs/Api/OrdersApi.md#orderapiaddshipment) | **POST** /api/v1/orders/{id}/shipment | Add a shipment to a given order
 *OrdersApi* | [**orderApiCreateDeliveryNote**](docs/Api/OrdersApi.md#orderapicreatedeliverynote) | **POST** /api/v1/orders/CreateDeliveryNote/{id} | Create an delivery note for an existing order. This request is extra throttled by order and api key to a maximum of 1 per 5 minutes.
@@ -155,7 +155,7 @@ Class | Method | HTTP request | Description
 *OrdersApi* | [**orderApiTagsUpdate**](docs/Api/OrdersApi.md#orderapitagsupdate) | **PUT** /api/v1/orders/{id}/tags | Sets the tags attached to an order
 *OrdersApi* | [**orderApiTriggerEvent**](docs/Api/OrdersApi.md#orderapitriggerevent) | **POST** /api/v1/orders/{id}/trigger-event | Triggers a rule event
 *OrdersApi* | [**orderApiUpdateState**](docs/Api/OrdersApi.md#orderapiupdatestate) | **PUT** /api/v1/orders/{id}/orderstate | Changes the main state of a single order
-*OrdersApi* | [**searchSearch**](docs/Api/OrdersApi.md#searchsearch) | **POST** /api/v1/search | Search for products, customers and orders.  Type can be \&quot;order\&quot;, \&quot;product\&quot; and / or \&quot;customer\&quot;  Term can contain lucene query syntax
+*OrdersApi* | [**searchSearch_1**](docs/Api/OrdersApi.md#searchsearch_1) | **POST** /api/v1/search | Search for products, customers and orders.  Type can be \&quot;order\&quot;, \&quot;product\&quot; and / or \&quot;customer\&quot;  Term can contain lucene query syntax
 *ProductsApi* | [**articleCreateArticle**](docs/Api/ProductsApi.md#articlecreatearticle) | **POST** /api/v1/products | Creates a new product
 *ProductsApi* | [**articleDeleteArticle**](docs/Api/ProductsApi.md#articledeletearticle) | **DELETE** /api/v1/products/{id} | Deletes a product
 *ProductsApi* | [**articleDeleteImage**](docs/Api/ProductsApi.md#articledeleteimage) | **DELETE** /api/v1/products/images/{imageId} | Deletes a single image by id

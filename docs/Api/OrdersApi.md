@@ -23,7 +23,7 @@ All URIs are relative to https://app.billbee.io, except if the operation defines
 | [**orderApiTagsUpdate()**](OrdersApi.md#orderApiTagsUpdate) | **PUT** /api/v1/orders/{id}/tags | Sets the tags attached to an order |
 | [**orderApiTriggerEvent()**](OrdersApi.md#orderApiTriggerEvent) | **POST** /api/v1/orders/{id}/trigger-event | Triggers a rule event |
 | [**orderApiUpdateState()**](OrdersApi.md#orderApiUpdateState) | **PUT** /api/v1/orders/{id}/orderstate | Changes the main state of a single order |
-| [**searchSearch()**](OrdersApi.md#searchSearch) | **POST** /api/v1/search | Search for products, customers and orders.  Type can be \&quot;order\&quot;, \&quot;product\&quot; and / or \&quot;customer\&quot;  Term can contain lucene query syntax |
+| [**searchSearch_1()**](OrdersApi.md#searchSearch_1) | **POST** /api/v1/search | Search for products, customers and orders.  Type can be \&quot;order\&quot;, \&quot;product\&quot; and / or \&quot;customer\&quot;  Term can contain lucene query syntax |
 
 
 ## `layoutApiGetList()`
@@ -148,7 +148,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: `application/json`, `text/json`, `application/xml`, `text/xml`, `application/x-www-form-urlencoded`
-- **Accept**: Not defined
+- **Accept**: `application/json`, `text/json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -1337,10 +1337,10 @@ void (empty response body)
 [[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
-## `searchSearch()`
+## `searchSearch_1()`
 
 ```php
-searchSearch($model): \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiApiResultOfRechnungsdruckWebAppControllersApiSearchControllerSearchResultsModel
+searchSearch_1($model): \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiApiResultOfRechnungsdruckWebAppControllersApiSearchControllerSearchResultsModel
 ```
 
 Search for products, customers and orders.  Type can be \"order\", \"product\" and / or \"customer\"  Term can contain lucene query syntax
@@ -1372,10 +1372,10 @@ $apiInstance = new kruegge82\billbee\Api\OrdersApi(
 $model = new \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiSearchControllerSearchModel(); // \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiSearchControllerSearchModel
 
 try {
-    $result = $apiInstance->searchSearch($model);
+    $result = $apiInstance->searchSearch_1($model);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling OrdersApi->searchSearch: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling OrdersApi->searchSearch_1: ', $e->getMessage(), PHP_EOL;
 }
 ```
 

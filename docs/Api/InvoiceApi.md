@@ -4,14 +4,14 @@ All URIs are relative to https://app.billbee.io, except if the operation defines
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
-| [**orderApiCreateInvoice()**](InvoiceApi.md#orderApiCreateInvoice) | **POST** /api/v1/orders/CreateInvoice/{id} | Create an invoice for an existing order. This request is extra throttled by order and api key to a maximum of 1 per 5 minutes. |
-| [**orderApiGetInvoiceList()**](InvoiceApi.md#orderApiGetInvoiceList) | **GET** /api/v1/orders/invoices | Get a list of all invoices optionally filtered by date. This request ist throttled to 1 per 1 minute for same page and minInvoiceDate |
+| [**orderApiCreateInvoice_0()**](InvoiceApi.md#orderApiCreateInvoice_0) | **POST** /api/v1/orders/CreateInvoice/{id} | Create an invoice for an existing order. This request is extra throttled by order and api key to a maximum of 1 per 5 minutes. |
+| [**orderApiGetInvoiceList_0()**](InvoiceApi.md#orderApiGetInvoiceList_0) | **GET** /api/v1/orders/invoices | Get a list of all invoices optionally filtered by date. This request ist throttled to 1 per 1 minute for same page and minInvoiceDate |
 
 
-## `orderApiCreateInvoice()`
+## `orderApiCreateInvoice_0()`
 
 ```php
-orderApiCreateInvoice($id, $include_invoice_pdf, $template_id, $send_to_cloud_id): \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiApiResultOfRechnungsdruckWebAppControllersApiInvoice
+orderApiCreateInvoice_0($id, $include_invoice_pdf, $template_id, $send_to_cloud_id): \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiApiResultOfRechnungsdruckWebAppControllersApiInvoice
 ```
 
 Create an invoice for an existing order. This request is extra throttled by order and api key to a maximum of 1 per 5 minutes.
@@ -46,10 +46,10 @@ $template_id = 56; // int | You can pass the id of an invoice template to overwr
 $send_to_cloud_id = 56; // int | You can pass the id of a connected cloud printer/storage to send the invoice to it
 
 try {
-    $result = $apiInstance->orderApiCreateInvoice($id, $include_invoice_pdf, $template_id, $send_to_cloud_id);
+    $result = $apiInstance->orderApiCreateInvoice_0($id, $include_invoice_pdf, $template_id, $send_to_cloud_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling InvoiceApi->orderApiCreateInvoice: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling InvoiceApi->orderApiCreateInvoice_0: ', $e->getMessage(), PHP_EOL;
 }
 ```
 
@@ -79,10 +79,10 @@ try {
 [[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
-## `orderApiGetInvoiceList()`
+## `orderApiGetInvoiceList_0()`
 
 ```php
-orderApiGetInvoiceList($min_invoice_date, $max_invoice_date, $page, $page_size, $shop_id, $order_state_id, $tag, $min_pay_date, $max_pay_date, $include_positions, $exclude_tags): \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiApiPagedResultOfSystemCollectionsGenericListOfBillbeeInterfacesBillbeeAPIModelInvoiceApiModel
+orderApiGetInvoiceList_0($min_invoice_date, $max_invoice_date, $page, $page_size, $shop_id, $order_state_id, $tag, $min_pay_date, $max_pay_date, $include_positions, $exclude_tags): \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiApiPagedResultOfSystemCollectionsGenericListOfBillbeeInterfacesBillbeeAPIModelInvoiceApiModel
 ```
 
 Get a list of all invoices optionally filtered by date. This request ist throttled to 1 per 1 minute for same page and minInvoiceDate
@@ -124,10 +124,10 @@ $include_positions = false; // bool
 $exclude_tags = false; // bool | If true the list of tags passed to the call are used to filter orders to not include these tags
 
 try {
-    $result = $apiInstance->orderApiGetInvoiceList($min_invoice_date, $max_invoice_date, $page, $page_size, $shop_id, $order_state_id, $tag, $min_pay_date, $max_pay_date, $include_positions, $exclude_tags);
+    $result = $apiInstance->orderApiGetInvoiceList_0($min_invoice_date, $max_invoice_date, $page, $page_size, $shop_id, $order_state_id, $tag, $min_pay_date, $max_pay_date, $include_positions, $exclude_tags);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling InvoiceApi->orderApiGetInvoiceList: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling InvoiceApi->orderApiGetInvoiceList_0: ', $e->getMessage(), PHP_EOL;
 }
 ```
 
