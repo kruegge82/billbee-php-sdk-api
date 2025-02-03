@@ -309,7 +309,7 @@ class BillbeeInterfacesOrderVatDetailsRecognizedHistoryEntryVatDetectionFlags im
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(array|null $data = null)
     {
         $this->setIfExists('third_party_country', $data ?? [], null);
         $this->setIfExists('src_country_is_equal_to_dst_country', $data ?? [], null);

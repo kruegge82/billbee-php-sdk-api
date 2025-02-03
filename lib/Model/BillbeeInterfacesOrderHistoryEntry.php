@@ -267,7 +267,7 @@ class BillbeeInterfacesOrderHistoryEntry implements ModelInterface, ArrayAccess,
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(array|null $data = null)
     {
         $this->setIfExists('created', $data ?? [], null);
         $this->setIfExists('event_type_name', $data ?? [], null);

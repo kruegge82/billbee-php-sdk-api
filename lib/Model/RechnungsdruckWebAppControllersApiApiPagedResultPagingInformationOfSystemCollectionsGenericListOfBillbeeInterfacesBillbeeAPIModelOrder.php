@@ -261,7 +261,7 @@ class RechnungsdruckWebAppControllersApiApiPagedResultPagingInformationOfSystemC
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(array|null $data = null)
     {
         $this->setIfExists('page', $data ?? [], null);
         $this->setIfExists('total_pages', $data ?? [], null);

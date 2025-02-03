@@ -321,7 +321,7 @@ class RechnungsdruckWebAppControllersApiOrder implements ModelInterface, ArrayAc
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(array|null $data = null)
     {
         $this->setIfExists('id', $data ?? [], null);
         $this->setIfExists('external_id', $data ?? [], null);
