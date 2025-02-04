@@ -23,7 +23,7 @@ All URIs are relative to https://app.billbee.io, except if the operation defines
 | [**orderApiTagsUpdate()**](OrdersApi.md#orderApiTagsUpdate) | **PUT** /api/v1/orders/{id}/tags | Sets the tags attached to an order |
 | [**orderApiTriggerEvent()**](OrdersApi.md#orderApiTriggerEvent) | **POST** /api/v1/orders/{id}/trigger-event | Triggers a rule event |
 | [**orderApiUpdateState()**](OrdersApi.md#orderApiUpdateState) | **PUT** /api/v1/orders/{id}/orderstate | Changes the main state of a single order |
-| [**searchSearch_1()**](OrdersApi.md#searchSearch_1) | **POST** /api/v1/search | Search for products, customers and orders.  Type can be \&quot;order\&quot;, \&quot;product\&quot; and / or \&quot;customer\&quot;  Term can contain lucene query syntax |
+| [**searchSearch()**](OrdersApi.md#searchSearch) | **POST** /api/v1/search | Search for products, customers and orders.  Type can be \&quot;order\&quot;, \&quot;product\&quot; and / or \&quot;customer\&quot;  Term can contain lucene query syntax |
 
 
 ## `layoutApiGetList()`
@@ -525,15 +525,15 @@ $apiInstance = new kruegge82\billbee\Api\OrdersApi(
     new GuzzleHttp\Client(),
     $config
 );
-$min_invoice_date = new \DateTime("2013-10-20T19:20:30+01:00"); // \DateTime | Specifies the oldest invoice date to include
-$max_invoice_date = new \DateTime("2013-10-20T19:20:30+01:00"); // \DateTime | Specifies the newest invoice date to include
+$min_invoice_date = new \DateTime('2013-10-20T19:20:30+01:00'); // \DateTime | Specifies the oldest invoice date to include
+$max_invoice_date = new \DateTime('2013-10-20T19:20:30+01:00'); // \DateTime | Specifies the newest invoice date to include
 $page = 1; // int | Specifies the page to request
 $page_size = 50; // int | Specifies the pagesize. Defaults to 50, max value is 250
 $shop_id = array(56); // int[] | Specifies a list of shop ids for which invoices should be included
 $order_state_id = array(56); // int[] | Specifies a list of state ids to include in the response
 $tag = array('tag_example'); // string[]
-$min_pay_date = new \DateTime("2013-10-20T19:20:30+01:00"); // \DateTime
-$max_pay_date = new \DateTime("2013-10-20T19:20:30+01:00"); // \DateTime
+$min_pay_date = new \DateTime('2013-10-20T19:20:30+01:00'); // \DateTime
+$max_pay_date = new \DateTime('2013-10-20T19:20:30+01:00'); // \DateTime
 $include_positions = false; // bool
 $exclude_tags = false; // bool | If true the list of tags passed to the call are used to filter orders to not include these tags
 
@@ -610,16 +610,16 @@ $apiInstance = new kruegge82\billbee\Api\OrdersApi(
     new GuzzleHttp\Client(),
     $config
 );
-$min_order_date = new \DateTime("2013-10-20T19:20:30+01:00"); // \DateTime | Specifies the oldest order date to include in the response
-$max_order_date = new \DateTime("2013-10-20T19:20:30+01:00"); // \DateTime | Specifies the newest order date to include in the response
+$min_order_date = new \DateTime('2013-10-20T19:20:30+01:00'); // \DateTime | Specifies the oldest order date to include in the response
+$max_order_date = new \DateTime('2013-10-20T19:20:30+01:00'); // \DateTime | Specifies the newest order date to include in the response
 $page = 1; // int | Specifies the page to request
 $page_size = 50; // int | Specifies the pagesize. Defaults to 50, max value is 250
 $shop_id = array(56); // int[] | Specifies a list of shop ids for which invoices should be included
 $order_state_id = array(56); // int[] | Specifies a list of state ids to include in the response
 $tag = array('tag_example'); // string[] | Specifies a list of tags the order must have attached to be included in the response
 $minimum_bill_bee_order_id = 56; // int | If given, all delivered orders have an Id greater than or equal to the given minimumOrderId
-$modified_at_min = new \DateTime("2013-10-20T19:20:30+01:00"); // \DateTime | If given, the last modification has to be newer than the given date
-$modified_at_max = new \DateTime("2013-10-20T19:20:30+01:00"); // \DateTime | If given, the last modification has to be older or equal than the given date.
+$modified_at_min = new \DateTime('2013-10-20T19:20:30+01:00'); // \DateTime | If given, the last modification has to be newer than the given date
+$modified_at_max = new \DateTime('2013-10-20T19:20:30+01:00'); // \DateTime | If given, the last modification has to be older or equal than the given date.
 $article_title_source = 0; // int | The source field for the article title. 0 = Order Position (default), 1 = Article Title, 2 = Article Invoice Text
 $exclude_tags = false; // bool | If true the list of tags passed to the call are used to filter orders to not include these tags
 
@@ -1337,10 +1337,10 @@ void (empty response body)
 [[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
-## `searchSearch_1()`
+## `searchSearch()`
 
 ```php
-searchSearch_1($model): \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiApiResultOfRechnungsdruckWebAppControllersApiSearchControllerSearchResultsModel
+searchSearch($model): \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiApiResultOfRechnungsdruckWebAppControllersApiSearchControllerSearchResultsModel
 ```
 
 Search for products, customers and orders.  Type can be \"order\", \"product\" and / or \"customer\"  Term can contain lucene query syntax
@@ -1372,10 +1372,10 @@ $apiInstance = new kruegge82\billbee\Api\OrdersApi(
 $model = new \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiSearchControllerSearchModel(); // \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiSearchControllerSearchModel
 
 try {
-    $result = $apiInstance->searchSearch_1($model);
+    $result = $apiInstance->searchSearch($model);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling OrdersApi->searchSearch_1: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling OrdersApi->searchSearch: ', $e->getMessage(), PHP_EOL;
 }
 ```
 

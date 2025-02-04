@@ -14,7 +14,7 @@ All URIs are relative to https://app.billbee.io, except if the operation defines
 | [**customerPatchAddress()**](CustomersApi.md#customerPatchAddress) | **PATCH** /api/v1/customers/addresses/{id} | Updates one or more fields of an address |
 | [**customerUpdate()**](CustomersApi.md#customerUpdate) | **PUT** /api/v1/customers/{id} | Updates a customer by id |
 | [**customerUpdateAddress()**](CustomersApi.md#customerUpdateAddress) | **PUT** /api/v1/customers/addresses/{id} | Updates all fields of an address |
-| [**searchSearch_0()**](CustomersApi.md#searchSearch_0) | **POST** /api/v1/search | Search for products, customers and orders.  Type can be \&quot;order\&quot;, \&quot;product\&quot; and / or \&quot;customer\&quot;  Term can contain lucene query syntax |
+| [**searchSearch()**](CustomersApi.md#searchSearch) | **POST** /api/v1/search | Search for products, customers and orders.  Type can be \&quot;order\&quot;, \&quot;product\&quot; and / or \&quot;customer\&quot;  Term can contain lucene query syntax |
 
 
 ## `customerAddCustomerAddress()`
@@ -691,10 +691,10 @@ try {
 [[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
-## `searchSearch_0()`
+## `searchSearch()`
 
 ```php
-searchSearch_0($model): \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiApiResultOfRechnungsdruckWebAppControllersApiSearchControllerSearchResultsModel
+searchSearch($model): \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiApiResultOfRechnungsdruckWebAppControllersApiSearchControllerSearchResultsModel
 ```
 
 Search for products, customers and orders.  Type can be \"order\", \"product\" and / or \"customer\"  Term can contain lucene query syntax
@@ -726,10 +726,10 @@ $apiInstance = new kruegge82\billbee\Api\CustomersApi(
 $model = new \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiSearchControllerSearchModel(); // \kruegge82\billbee\Model\RechnungsdruckWebAppControllersApiSearchControllerSearchModel
 
 try {
-    $result = $apiInstance->searchSearch_0($model);
+    $result = $apiInstance->searchSearch($model);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling CustomersApi->searchSearch_0: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CustomersApi->searchSearch: ', $e->getMessage(), PHP_EOL;
 }
 ```
 

@@ -848,7 +848,7 @@ $apiInstance = new kruegge82\billbee\Api\ProductsApi(
 );
 $page = 1; // int | The current page to request starting with 1
 $page_size = 50; // int | The pagesize for the result list. Values between 1 and 250 are allowed
-$min_created_at = new \DateTime("2013-10-20T19:20:30+01:00"); // \DateTime | Optional the oldest create date of the articles to be returned
+$min_created_at = new \DateTime('2013-10-20T19:20:30+01:00'); // \DateTime | Optional the oldest create date of the articles to be returned
 $minimum_bill_bee_article_id = 56; // int
 $maximum_bill_bee_article_id = 56; // int
 

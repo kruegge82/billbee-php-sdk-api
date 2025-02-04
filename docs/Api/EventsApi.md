@@ -39,8 +39,8 @@ $apiInstance = new kruegge82\billbee\Api\EventsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$min_date = new \DateTime("2013-10-20T19:20:30+01:00"); // \DateTime | Specifies the oldest date to include in the response
-$max_date = new \DateTime("2013-10-20T19:20:30+01:00"); // \DateTime | Specifies the newest date to include in the response
+$min_date = new \DateTime('2013-10-20T19:20:30+01:00'); // \DateTime | Specifies the oldest date to include in the response
+$max_date = new \DateTime('2013-10-20T19:20:30+01:00'); // \DateTime | Specifies the newest date to include in the response
 $page = 1; // int | Specifies the page to request
 $page_size = 50; // int | Specifies the pagesize. Defaults to 50, max value is 250
 $type_id = array(56); // int[] | Filter for specific event types

@@ -46,8 +46,8 @@ $apiInstance = new kruegge82\billbee\Api\ShipmentsApi(
 );
 $page = 1; // int | Specifies the page to request.
 $page_size = 50; // int | Specifies the pagesize. Defaults to 50, max value is 250
-$created_at_min = new \DateTime("2013-10-20T19:20:30+01:00"); // \DateTime | Specifies the oldest shipment date to include in the response
-$created_at_max = new \DateTime("2013-10-20T19:20:30+01:00"); // \DateTime | Specifies the newest shipment date to include in the response
+$created_at_min = new \DateTime('2013-10-20T19:20:30+01:00'); // \DateTime | Specifies the oldest shipment date to include in the response
+$created_at_max = new \DateTime('2013-10-20T19:20:30+01:00'); // \DateTime | Specifies the newest shipment date to include in the response
 $order_id = 56; // int | Get shipments for this order only.
 $minimum_shipment_id = 56; // int | Get Shipments with a shipment greater or equal than this id. New shipments have a greater id than older shipments.
 $shipping_provider_id = 56; // int | Get Shippings for the specified shipping provider only. <seealso cref=\"M:Rechnungsdruck.WebApp.Controllers.Api.ShipmentController.GetShippingproviders\" />
