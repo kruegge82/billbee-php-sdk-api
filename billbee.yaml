@@ -5819,7 +5819,7 @@ definitions:
       Source:
         type: string
       SourceId:
-        type: string
+        type: ['null', string]
       ApiAccountName:
         type: string
       ApiAccountId:

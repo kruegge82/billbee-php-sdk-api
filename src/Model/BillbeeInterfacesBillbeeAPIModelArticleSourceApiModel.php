@@ -423,7 +423,7 @@ class BillbeeInterfacesBillbeeAPIModelArticleSourceApiModel implements ModelInte
      *
      * @return string
      */
-    public function getSourceId(): string
+    public function getSourceId(): string|null
     {
         return $this->container['source_id'];
     }
